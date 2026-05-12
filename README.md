@@ -167,6 +167,12 @@ streamlit run visualization.py
 
 ---
 
+## Simple visualization
+For simple visualization you can just run simple-visualization
+
+```bash
+ python3 simple_visualization.py
+```
 ## 🐛 Known Issues & Troubleshooting
 
 | Problem | Solution |
