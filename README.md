@@ -115,37 +115,7 @@ cd ultrasonic-telemetry-system
 
 ## 📄 Source Code
 
-```cpp
-long duration;
-int distance;
-
-const int triggerPing = 10;
-const int echoPing    = 11;
-
-void setup() {
-  pinMode(triggerPing, OUTPUT);
-  pinMode(echoPing, INPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  // Send trigger pulse
-  digitalWrite(triggerPing, LOW);
-  delayMicroseconds(2);
-  digitalWrite(triggerPing, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(triggerPing, LOW);
-
-  // Read echo duration and calculate distance
-  duration = pulseIn(echoPing, HIGH);
-  distance = (duration * 0.034) / 2;
-
-  Serial.print("Distance: ");
-  Serial.println(distance);
-
-  delay(100);
-}
-```
+Visit - [Arduino sketch source code](ultrasonik.ino)
 
 ---
 
